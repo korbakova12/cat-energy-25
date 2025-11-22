@@ -1,0 +1,8 @@
+.example__title {
+  @include text-parameters($secondary-font, 36px, 40px, $secondary-color-text);
+}
+
+.example__costs {
+  @include text-parameters($secondary-font, 14px, 20px, $secondary-color-text);
+  text-transform: uppercase;
+}
