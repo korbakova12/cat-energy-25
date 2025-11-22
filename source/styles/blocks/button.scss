@@ -1,0 +1,13 @@
+.button {
+  @include text-parameters($secondary-font, 16px, 20px, $contrast-color-text);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button--primary {
+  background-color: $bg-color-accent;
+}
+
+.button--secondary {
+  background-color: $bg-color-basic;
+}

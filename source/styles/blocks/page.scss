@@ -1,4 +1,4 @@
 .page__body {
-  font-family: "Oswald", "Arial", sans-serif;
-  color: $primary-color-text;
+  @include text-parameters ($basic-font, 14px, 18px, $basic-color-text);
+  font-weight: 400;
 }
