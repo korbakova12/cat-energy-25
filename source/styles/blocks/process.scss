@@ -1,3 +1,4 @@
 .process__title {
-  @include text-parameters ($secondary-font, 36px, 40px, $secondary-color-text);
+  @include text-parameters ($secondary-font, 36px, 40px, $text-color-second);
+  font-weight: 400;
 }

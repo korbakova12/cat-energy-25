@@ -1,0 +1,8 @@
+.additional-card__name {
+  @include text-parameters ($secondary-font, 16px, 16px, $text-color-second-light-2);
+}
+
+.additional-card__price {
+  font-size: 14px;
+  line-height: 14px;
+}

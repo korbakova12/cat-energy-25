@@ -1,5 +1,5 @@
 .example-results__number {
-  @include text-parameters($secondary-font, 24px, 24px, $secondary-color-text);
+  @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
   text-transform: uppercase;
 }
 

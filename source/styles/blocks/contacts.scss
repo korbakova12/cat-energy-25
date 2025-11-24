@@ -1,5 +1,6 @@
 .contacts__title {
-  @include text-parameters($secondary-font, 16px, 20px, $secondary-color-text-light);
+  @include text-parameters($secondary-font, 16px, 20px, $text-color-second-light);
+  font-weight: 400;
   text-transform: uppercase;
 }
 

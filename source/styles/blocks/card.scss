@@ -1,0 +1,14 @@
+.card__title {
+  @include text-parameters($secondary-font, 16px, 20px, $text-color-second-light-2);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.card__info-list {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card--empty .card__title {
+  color: $text-color-second-light;
+}

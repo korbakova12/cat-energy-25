@@ -1,0 +1,8 @@
+.additional-products__title {
+  @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
+  font-weight: 400;
+}
+
+.additional-products__promo {
+  @include text-parameters($basic-font, 16px, 20px, $text-color-contrast);
+}

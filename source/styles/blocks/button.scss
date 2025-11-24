@@ -1,5 +1,5 @@
 .button {
-  @include text-parameters($secondary-font, 16px, 20px, $contrast-color-text);
+  @include text-parameters($secondary-font, 16px, 20px, $text-color-contrast);
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -9,5 +9,6 @@
 }
 
 .button--secondary {
+  color: $text-color-basic;
   background-color: $bg-color-basic;
 }

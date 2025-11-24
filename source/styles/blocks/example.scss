@@ -1,8 +1,9 @@
 .example__title {
-  @include text-parameters($secondary-font, 36px, 40px, $secondary-color-text);
+  @include text-parameters($secondary-font, 36px, 40px, $text-color-second);
+  font-weight: 400;
 }
 
 .example__costs {
-  @include text-parameters($secondary-font, 14px, 20px, $secondary-color-text);
+  @include text-parameters($secondary-font, 14px, 20px, $text-color-second);
   text-transform: uppercase;
 }

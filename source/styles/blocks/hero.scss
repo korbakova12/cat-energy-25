@@ -4,11 +4,12 @@
 }
 
 .hero__title {
-  @include text-parameters ($secondary-font, 36px, 36px, $contrast-color-text);
+  @include text-parameters ($secondary-font, 36px, 36px, $text-color-contrast);
+  font-weight: 400;
 }
 
 .hero__description {
-  @include text-parameters ($secondary-font, 14px, 14px, $contrast-color-text);
+  @include text-parameters ($secondary-font, 14px, 14px, $text-color-contrast);
   text-transform: uppercase;
 }
 

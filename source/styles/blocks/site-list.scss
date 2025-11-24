@@ -1,5 +1,5 @@
 .site-list__link {
-  @include text-parameters($secondary-font, 20px, 20px, $secondary-color-text);
+  @include text-parameters($secondary-font, 20px, 20px, $text-color-second);
   text-transform: uppercase;
   text-decoration: none;
 }

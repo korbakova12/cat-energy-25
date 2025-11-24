@@ -1,10 +1,11 @@
 .programs__item-title {
-  @include text-parameters($secondary-font, 24px, 37px, $secondary-color-text);
+  @include text-parameters($secondary-font, 24px, 37px, $text-color-second);
+  font-weight: 400;
   text-transform: uppercase;
 }
 
 .programs__item-link {
-  @include text-parameters($secondary-font, 16px, 20px, $secondary-color-text);
+  @include text-parameters($secondary-font, 16px, 20px, $text-color-second);
   text-transform: uppercase;
   text-decoration: none;
 }
