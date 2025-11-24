@@ -5,4 +5,5 @@
 
 .additional-products__promo {
   @include text-parameters($basic-font, 16px, 20px, $text-color-contrast);
+  background-color: $bg-color-accent;
 }
