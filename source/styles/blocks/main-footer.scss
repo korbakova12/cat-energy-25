@@ -1,3 +1,7 @@
+.main-footer__wrapper {
+  background-color: $bg-color-basic;
+}
+
 .main-footer__developer {
   @include text-parameters($basic-font, 16px, 20px, $text-color-basic);
   text-decoration: none;

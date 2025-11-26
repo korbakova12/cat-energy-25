@@ -1,3 +1,7 @@
+.programs__item {
+  background-color: $bg-color-basic;
+}
+
 .programs__item-title {
   @include text-parameters($secondary-font, 24px, 37px, $text-color-second);
   font-weight: 400;
@@ -9,3 +13,4 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
