@@ -1,0 +1,10 @@
+.field__label {
+  font-family: $secondary-font;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.field__input {
+  @include text-parameters($secondary-font, 16px, 18px, $text-color-basic);
+  text-transform: uppercase;
+}

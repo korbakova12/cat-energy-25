@@ -1,0 +1,15 @@
+.hero {
+  background-color: $bg-color-accent;
+  text-align: center;
+}
+
+.hero__title {
+  @include text-parameters ($secondary-font, 36px, 36px, $text-color-contrast);
+  font-weight: 400;
+}
+
+.hero__description {
+  @include text-parameters ($secondary-font, 14px, 14px, $text-color-contrast);
+  text-transform: uppercase;
+}
+

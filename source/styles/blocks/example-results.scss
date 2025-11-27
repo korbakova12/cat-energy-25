@@ -1,0 +1,9 @@
+.example-results__number {
+  @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
+  text-transform: uppercase;
+}
+
+.example-results__description {
+  font-size: 12px;
+  line-height: 12px;
+}

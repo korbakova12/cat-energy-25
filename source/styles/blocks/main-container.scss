@@ -1,0 +1,4 @@
+.main-container__title {
+  @include text-parameters ($secondary-font, 36px, 36px, $text-color-second);
+  font-weight: 400;
+}

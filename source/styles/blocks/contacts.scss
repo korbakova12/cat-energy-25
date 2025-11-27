@@ -1,0 +1,14 @@
+.contacts--bg-inner {
+  background-color: $bg-color-basic;
+}
+
+.contacts__title {
+  @include text-parameters($secondary-font, 16px, 20px, $text-color-second-light);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  line-height: 20px;
+  font-style: normal;
+}

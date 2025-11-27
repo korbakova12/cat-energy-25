@@ -1,0 +1,8 @@
+.choice-program__description {
+  font-family: $secondary-font;
+  color: $text-color-second;
+}
+
+.choice-program__comment {
+  @include text-parameters($basic-font, 14px, 16px, $text-color-second);
+}

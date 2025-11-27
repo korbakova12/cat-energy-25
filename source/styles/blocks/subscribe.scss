@@ -1,0 +1,17 @@
+.subscribe__title {
+  @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
+  font-weight: 400;
+}
+
+.subscribe__text {
+  @include text-parameters($secondary-font, 16px, 24px, $text-color-second);
+}
+
+.subscribe__input {
+  @include text-parameters($secondary-font, 20px, 20px, $text-color-basic);
+}
+
+.subscribe__button {
+  font-size: 20px;
+  line-height: 26px;
+}
