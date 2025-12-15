@@ -14,15 +14,15 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header container">
     <a class="main-header__logo logo" href="index.html">
       <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg">
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-image-desktop.svg">
         <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg">
         <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип">
       </picture>
       <picture>
-        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-additional.svg">
+        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-text-additional.svg">
         <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-additional.svg">
         <img class="logo__text" src="images/logo-text-basic.svg" width="101" height="18" alt="Cat Energy">
       </picture>
@@ -45,17 +45,19 @@
     </nav>
   </header>
   <main class="main-container">
-    <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
-      <p class="hero__description">Занялся собой? Займись котом!</p>
-      <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-hero-desktop@1x.png 1x, images/index-hero-desktop@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-hero-tablet@1x.png 1x, images/index-hero-tablet@2x.png 2x">
-        <img class="hero__image" src="images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png 2x" width="552" height="499" alt="Корм для кошек Cat Energy PRO  с курицей в оранжевой упаковке">
-      </picture>
-      <a class="hero__link button button--primary" href="#">Подобрать программу</a>
+    <section class="main-container__hero hero">
+      <div class="container">
+        <h1 class="hero__title">Функциональное питание для котов</h1>
+        <p class="hero__description">Занялся собой? Займись котом!</p>
+        <picture>
+          <source width="552" height="499" type="image/png" media="(min-width: 1300px)" srcset="images/index-hero-desktop@1x.png 1x, images/index-hero-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-hero-tablet@1x.png 1x, images/index-hero-tablet@2x.png 2x">
+          <img class="hero__image" src="images/index-hero-mobile@1x.png" srcset="images/index-hero-mobile@2x.png 2x" width="552" height="499" alt="Корм для кошек Cat Energy PRO  с курицей в оранжевой упаковке">
+        </picture>
+        <a class="hero__link button button--primary" href="#">Подобрать программу</a>
+      </div>
     </section>
-    <section class="programs">
+    <section class="main-container__programs programs">
       <h2 class="visually-hidden">Программы питания для котов в соответствии с целями</h2>
       <ul class="programs__list">
         <li class="programs__item">
@@ -126,7 +128,7 @@
         <span class="contacts__adress-city">Санкт-Петербург</span>
       </address>
       <picture>
-        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png@1x.png 1x, images/map-desktop@2x.png 2x">
+        <source width="1440" height="400" type="image/png" media="(min-width: 1300px)" srcset="images/map-desktop@1x.png@1x.png 1x, images/map-desktop@2x.png 2x">
         <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
         <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта проезда к офису Cat Energy">
       </picture>

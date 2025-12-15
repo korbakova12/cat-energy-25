@@ -1,3 +1,4 @@
 .page__body {
   @include text-parameters ($basic-font, 14px, 18px, $text-color-basic);
+  margin: 0;
 }

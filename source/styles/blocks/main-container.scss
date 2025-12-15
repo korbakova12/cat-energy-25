@@ -2,3 +2,11 @@
   @include text-parameters ($secondary-font, 36px, 36px, $text-color-second);
   font-weight: 400;
 }
+
+.main-container__hero {
+  margin-bottom: 20px;
+}
+
+.main-container__programs {
+  margin-bottom: 20px;
+}

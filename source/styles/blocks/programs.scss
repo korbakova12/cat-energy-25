@@ -1,11 +1,23 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .programs__item {
   background-color: $bg-color-basic;
+  margin-bottom: 20px;
+}
+
+.process__item:not(:last-child) {
+  margin-bottom: 0;
 }
 
 .programs__item-title {
   @include text-parameters($secondary-font, 24px, 37px, $text-color-second);
   font-weight: 400;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .programs__item-link {
