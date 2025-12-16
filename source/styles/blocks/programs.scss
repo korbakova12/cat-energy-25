@@ -7,10 +7,36 @@
 .programs__item {
   background-color: $bg-color-basic;
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 67px;
+    height: 50px;
+    background-size: contain;
+    // z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $bg-color-accent;
+  }
 }
 
 .process__item:not(:last-child) {
   margin-bottom: 0;
+}
+
+.programs__item--slim::before {
+  background-image: url("../../icons/stack.svg#icon-program-slim");
+}
+
+.programs__item--pro::before {
+  background-image: url("../../icons/stack.svg#icon-program-pro");
 }
 
 .programs__item-title {
@@ -21,8 +47,27 @@
 }
 
 .programs__item-link {
+  padding-right: 35px;
+
   @include text-parameters($secondary-font, 16px, 20px, $text-color-second);
   text-transform: uppercase;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    background-image: url("../../icons/stack.svg#icon-arrow-button");
+    background-size: 32px 10px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    transform-origin: left center;
+    transition: transform 0.3s linear;
+  }
+
+  &:is(:hover, :focus, :focus-visible)::after {
+    transform: scaleX(1.35);
+  }
 }
 

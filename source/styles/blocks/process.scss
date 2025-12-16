@@ -2,3 +2,33 @@
   @include text-parameters ($secondary-font, 36px, 40px, $text-color-second);
   font-weight: 400;
 }
+
+.process__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $bg-color-accent;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.process__item--first::before {
+  background-image: url("../../icons/stack.svg#icon-process-1");
+  background-size: 30px 32px;
+}
+
+.process__item--second::before {
+  background-image: url("../../icons/stack.svg#icon-process-2");
+  background-size: 26px 29px;
+}
+
+.process__item--third::before {
+  background-image: url("../../icons/stack.svg#icon-process-3");
+  background-size: 25px 30px;
+}
+
+.process__item--fourth::before {
+  background-image: url("../../icons/stack.svg#icon-process-4");
+  background-size: 26px 31px;
+}

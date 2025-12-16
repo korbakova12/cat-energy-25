@@ -5,4 +5,15 @@
 .main-footer__developer {
   @include text-parameters($basic-font, 16px, 20px, $text-color-basic);
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    mask-image: url("../../icons/stack.svg#icon-htmlacademy");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background: $bg-color-special;
+  }
 }
