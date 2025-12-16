@@ -11,3 +11,43 @@
   @include text-parameters($secondary-font, 14px, 20px, $text-color-second);
   text-transform: uppercase;
 }
+
+.example__images-button {
+  position: relative;
+  display: block;
+  width: 4px;
+  height: 256px; //100% сделать потом
+  padding: 0;
+  border: none;
+  background-color: $bg-color-special;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 2px solid $bg-color-special;
+    border-radius: 50%;
+    background-color: $bg-color-light;
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#icon-arrows");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 24px 18px;
+    background-color: $bg-color-special;
+  }
+}
