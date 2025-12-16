@@ -12,12 +12,15 @@
 
 .programs__item {
   background-color: $bg-color-basic;
+<<<<<<< HEAD
   margin-bottom: 20px;
   padding: 20px 33px 18px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 77px 0 53px 53px;
   }
+=======
+>>>>>>> fb15d67 (Добавляет векторную графику в проект (#13))
 
   &::before {
     content: "";
@@ -38,10 +41,13 @@
   }
 }
 
+<<<<<<< HEAD
 .process__item:not(:last-child) {
   margin-bottom: 0;
 }
 
+=======
+>>>>>>> fb15d67 (Добавляет векторную графику в проект (#13))
 .programs__item--slim::before {
   background-image: url("../../icons/stack.svg#icon-program-slim");
 }
