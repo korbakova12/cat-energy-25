@@ -2,6 +2,13 @@
   background-color: $bg-color-basic;
 }
 
+.main-footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 130px 1fr 170px;
+  }
+}
+
 .main-footer__developer {
   @include text-parameters($basic-font, 16px, 20px, $text-color-basic);
   text-decoration: none;

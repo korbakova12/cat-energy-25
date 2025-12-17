@@ -2,6 +2,12 @@
   background-color: $bg-color-basic;
 }
 
+.example__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .example__title {
   @include text-parameters($secondary-font, 36px, 40px, $text-color-second);
   font-weight: 400;
