@@ -1,4 +1,11 @@
+.page {
+  height: 100%;
+}
+
 .page__body {
   @include text-parameters ($basic-font, 14px, 18px, $text-color-basic);
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   margin: 0;
 }
