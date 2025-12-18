@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header container">
     <a class="main-header__logo logo" href="index.html">
       <picture>
         <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg">
@@ -44,7 +44,7 @@
       </ul>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="main-container container">
     <header class="main-container__header">
       <h1 class="main-container__title">Каталог продукции</h1>
     </header>
@@ -190,43 +190,45 @@
     </section>
     <section class="additional-products">
       <h2 class="additional-products__title">Дополнительные товары</h2>
-      <ul class="additional-products__list">
-        <li class="additional-products__item additional-card">
-          <h3 class="additional-card__name">Сахарозаменитель</h3>
-          <p class="additional-card__price">
-            <span class="additional-card__volume">1 упаковка (100 г)</span>
-            <span class="additional-card__value">200 ₽</span>
-          </p>
-          <a class="additional-card__button button button--primary" href="#">Заказать</a>
-        </li>
-        <li class="additional-products__item additional-card">
-          <h3 class="additional-card__name">Питьевая вода</h3>
-          <p class="additional-card__price">
-            <span class="additional-card__volume">5 литров</span>
-            <span class="additional-card__value">50 ₽</span>
-          </p>
-          <a class="additional-card__button button button--primary" href="#">Заказать</a>
-        </li>
-        <li class="additional-products__item additional-card">
-          <h3 class="additional-card__name">Молоко</h3>
-          <p class="additional-card__price">
-            <span class="additional-card__volume">1 литр</span>
-            <span class="additional-card__value">100 ₽</span>
-          </p>
-          <a class="additional-card__button button button--primary" href="#">Заказать</a>
-        </li>
-        <li class="additional-products__item additional-card">
-          <h3 class="additional-card__name">Витамины</h3>
-          <p class="additional-card__price">
-            <span class="additional-card__volume">1 упаковка (30 г)</span>
-            <span class="additional-card__value">300 ₽</span>
-          </p>
-          <a class="additional-card__button button button--primary" href="#">Заказать</a>
-        </li>
-      </ul>
-      <div class="additional-products__promo">
-        <h3 class="visually-hidden">Специальное предложение</h3>
-        <p class="additional-products__promo-text">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="additional-products__wrapper">
+        <ul class="additional-products__list">
+          <li class="additional-products__item additional-card">
+            <h3 class="additional-card__name">Сахарозаменитель</h3>
+            <p class="additional-card__price">
+              <span class="additional-card__volume">1 упаковка (100 г)</span>
+              <span class="additional-card__value">200 ₽</span>
+            </p>
+            <a class="additional-card__button button button--primary" href="#">Заказать</a>
+          </li>
+          <li class="additional-products__item additional-card">
+            <h3 class="additional-card__name">Питьевая вода</h3>
+            <p class="additional-card__price">
+              <span class="additional-card__volume">5 литров</span>
+              <span class="additional-card__value">50 ₽</span>
+            </p>
+            <a class="additional-card__button button button--primary" href="#">Заказать</a>
+          </li>
+          <li class="additional-products__item additional-card">
+            <h3 class="additional-card__name">Молоко</h3>
+            <p class="additional-card__price">
+              <span class="additional-card__volume">1 литр</span>
+              <span class="additional-card__value">100 ₽</span>
+            </p>
+            <a class="additional-card__button button button--primary" href="#">Заказать</a>
+          </li>
+          <li class="additional-products__item additional-card">
+            <h3 class="additional-card__name">Витамины</h3>
+            <p class="additional-card__price">
+              <span class="additional-card__volume">1 упаковка (30 г)</span>
+              <span class="additional-card__value">300 ₽</span>
+            </p>
+            <a class="additional-card__button button button--primary" href="#">Заказать</a>
+          </li>
+        </ul>
+        <div class="additional-products__promo">
+          <h3 class="visually-hidden">Специальное предложение</h3>
+          <p class="additional-products__promo-text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="subscribe">
@@ -241,40 +243,44 @@
   </main>
   <footer class="main-footer">
     <section class="main-footer__contacts contacts contacts--bg-inner">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
-        <span class="contacts__adress-city">Санкт-Петербург</span>
-      </address>
-      <picture>
-        <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png@1x.png 1x, images/map-desktop@2x.png 2x">
-        <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта проезда к офису Cat Energy">
-      </picture>
+      <div class="container">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+          <span class="contacts__adress-city">Санкт-Петербург</span>
+        </address>
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта проезда к офису Cat Energy">
+        </picture>
+      </div>
     </section>
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo logo" href="index.html">
-        <img class="logo__text" src="images/logo-text-basic.svg" width="128" height="24" alt="Cat Energy">
-      </a>
-      <ul class="main-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#">
-            <span class="visually-hidden">Мы в ВКонтакте</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">
-            <span class="visually-hidden">Мы на YouTube</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--tg" href="#">
-            <span class="visually-hidden">Мы в Телеграм</span>
-          </a>
-        </li>
-      </ul>
-      <a class="main-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
-        HTML Academy
-      </a>
+      <div class="main-footer__container container">
+        <a class="main-footer__logo logo" href="index.html">
+          <img class="logo__text" src="images/logo-text-basic.svg" width="128" height="24" alt="Cat Energy">
+        </a>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">Мы на YouTube</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--tg" href="#">
+              <span class="visually-hidden">Мы в Телеграм</span>
+            </a>
+          </li>
+        </ul>
+        <a class="main-footer__developer" href="https://htmlacademy.ru/intensive/adaptive">
+          HTML Academy
+        </a>
+      </div>
     </div>
   </footer>
 

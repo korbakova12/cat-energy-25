@@ -3,6 +3,14 @@
   color: $text-color-second;
 }
 
+.choice-program__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+  }
+}
+
 .choice-program__comment {
   @include text-parameters($basic-font, 14px, 16px, $text-color-second);
 }
