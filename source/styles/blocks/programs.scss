@@ -12,48 +12,6 @@
 
 .programs__item {
   background-color: $bg-color-basic;
-<<<<<<< HEAD
-  margin-bottom: 20px;
-  padding: 20px 33px 18px 20px;
-
-  @media (min-width: $tablet-width) {
-    padding: 77px 0 53px 53px;
-  }
-=======
->>>>>>> fb15d67 (Добавляет векторную графику в проект (#13))
-
-  &::before {
-    content: "";
-    display: block;
-    width: 67px;
-    height: 50px;
-    background-size: contain;
-    // z-index: 1;
-  }
-
-  &::after {
-    content: "";
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: $bg-color-accent;
-  }
-}
-
-<<<<<<< HEAD
-.process__item:not(:last-child) {
-  margin-bottom: 0;
-}
-
-=======
->>>>>>> fb15d67 (Добавляет векторную графику в проект (#13))
-.programs__item--slim::before {
-  background-image: url("../../icons/stack.svg#icon-program-slim");
-}
-
-.programs__item--pro::before {
-  background-image: url("../../icons/stack.svg#icon-program-pro");
 }
 
 .programs__item-title {
