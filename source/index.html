@@ -14,25 +14,27 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header container">
-    <a class="main-header__logo logo" href="index.html">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-image-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg">
-        <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип">
-      </picture>
-      <picture>
-        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-text-add.svg">
-        <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-add.svg">
-        <img class="logo__text" src="images/logo-text-basic.svg" width="101" height="18" alt="Cat Energy">
-      </picture>
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
+  <header class="main-header">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo" href="index.html">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-image-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg">
+          <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип">
+        </picture>
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-text-add.svg">
+          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-add.svg">
+          <img class="logo__text" src="images/logo-text-basic.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <ul class="main-navigation__list site-list">
-        <li class="site-list__item site-list__item--active">
+        <li class="site-list__item">
           <a class="site-list__link" href="index.html">Главная</a>
         </li>
         <li class="site-list__item">
@@ -167,7 +169,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="index.js"></script>
 </body>
 
 </html>

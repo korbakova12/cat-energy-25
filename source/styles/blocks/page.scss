@@ -8,4 +8,15 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 694px;
+      background-image: linear-gradient(to right, $bg-color-light 50%, $bg-color-accent 50%);
+      z-index: -1;
+    }
+  }
 }

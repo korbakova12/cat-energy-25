@@ -1,11 +1,16 @@
 .hero {
   background-color: $bg-color-accent;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .hero__title {
   @include text-parameters ($secondary-font, 36px, 36px, $text-color-contrast);
   font-weight: 400;
+  margin-top: 0;
 }
 
 .hero__description {
