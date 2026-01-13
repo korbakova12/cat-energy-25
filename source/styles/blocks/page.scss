@@ -13,9 +13,11 @@
     &::before {
       content: "";
       position: absolute;
-      width: 100%;
+      left: 50%;
+      width: 50%;
       height: 695px;
-      background-image: linear-gradient(to right, $bg-color-light 50%, $bg-color-accent 50%);
+      background-image: linear-gradient(rgba($bg-color-accent, 0.85), rgba($bg-color-accent, 0.85)), url("../../images/index-hero-background-desktop@1x.jpg"), linear-gradient(to bottom left, #403f44, #505256);
+      background-repeat: no-repeat;
       z-index: -1;
     }
   }
