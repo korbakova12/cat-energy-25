@@ -9,10 +9,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 82px;
+    margin-bottom: 78px;
   }
 }
 
 .main-container__programs {
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    // margin-bottom: 45px;
+  }
 }

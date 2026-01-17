@@ -8,7 +8,7 @@
 
 .site-list__item:not(:last-child) {
   @media (min-width: $tablet-width) {
-    margin-right: 33px;
+    margin-right: 34px;
   }
 }
 
@@ -38,6 +38,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 19px;
+    padding-bottom: 19px;
     font-size: 20px;
     line-height: 20px;
     color: $text-color-contrast;
