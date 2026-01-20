@@ -1,5 +1,6 @@
 .process {
   padding-top: 20px;
+  padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
@@ -110,17 +111,19 @@
 }
 
 .process__item::after {
-  content: counter(process);
-  position: absolute;
-  top: 0;
-  left: 115px;
-  z-index: -1;
-  display: block;
-  width: 136px;
-  height: 280px;
+  @media (min-width: $tablet-width) {
+    content: counter(process);
+    position: absolute;
+    top: 0;
+    left: 115px;
+    z-index: -1;
+    display: block;
+    width: 136px;
+    height: 280px;
 
-  @include text-parameters($secondary-font, 280px, 280px, $text-color-counter);
-  counter-increment: process 1;
+    @include text-parameters($secondary-font, 280px, 280px, $text-color-counter);
+    counter-increment: process 1;
+  }
 }
 
 .process__item-text {

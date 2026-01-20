@@ -1,25 +1,71 @@
 .example {
+  padding-top: 25px;
+  padding-bottom: 40px;
   background-color: $bg-color-basic;
 }
 
-.example__container {
-  @media (min-width: $tablet-width) {
-    display: flex;
-  }
+.example__wrapper {
+  display: grid;
+  row-gap: 20px;
 }
 
 .example__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   @include text-parameters($secondary-font, 36px, 40px, $text-color-second);
   font-weight: 400;
 }
 
+.example__description {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.example__results {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .example__costs {
+  display: flex;
+  margin: 0 auto;
+
   @include text-parameters($secondary-font, 14px, 20px, $text-color-second);
   text-transform: uppercase;
 }
 
+.example__costs-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 4px;
+}
+
+.example__images {
+  display: flex;
+}
+
+.example__images picture {
+  display: contents;
+}
+
+.example__image {
+  width: 50%;
+  object-fit: cover;
+}
+
+.example__image--before {
+  object-position: left;
+}
+
+.example__image--after {
+  object-position: right;
+}
+
 .example__images-button {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   width: 4px;
   height: 256px; //100% сделать потом

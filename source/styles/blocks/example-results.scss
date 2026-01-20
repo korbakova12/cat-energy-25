@@ -1,9 +1,34 @@
-.example-results__number {
-  @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
-  text-transform: uppercase;
+.example-results {
+  display: flex;
+  column-gap: 32px;
+  text-align: center;
+}
+
+.example-results__item {
+  min-width: 124px;
+  display: flex;
+  flex-direction: column;
 }
 
 .example-results__description {
+  order: 2;
   font-size: 12px;
   line-height: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: $bg-color-basic;
+}
+
+.example-results__value {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  margin-left: 0;
+  border: 1px solid $border-color-example;
+  border-radius: 3px;
+
+  @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
+  text-transform: uppercase;
 }
