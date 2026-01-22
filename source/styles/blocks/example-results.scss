@@ -2,12 +2,20 @@
   display: flex;
   column-gap: 32px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 43px;
+  }
 }
 
 .example-results__item {
-  min-width: 124px;
+  width: 124px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 164px;
+  }
 }
 
 .example-results__description {
@@ -19,7 +27,20 @@
   margin-top: -10px;
   padding-left: 14px;
   padding-right: 14px;
-  background-color: $bg-color-basic;
+  background-color: $bg-color-basic-dark;
+
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: -9px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $bg-color-light;
+  }
 }
 
 .example-results__value {
@@ -31,4 +52,10 @@
 
   @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 20px;
+  }
 }
