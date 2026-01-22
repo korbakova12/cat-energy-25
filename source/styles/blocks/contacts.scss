@@ -2,7 +2,17 @@
   background-color: $bg-color-basic;
 }
 
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
 .contacts__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include text-parameters($secondary-font, 16px, 20px, $text-color-second-light);
   font-weight: 400;
   text-transform: uppercase;
@@ -11,4 +21,8 @@
 .contacts__address {
   line-height: 20px;
   font-style: normal;
+}
+
+.contacts__map {
+  display: block;
 }
