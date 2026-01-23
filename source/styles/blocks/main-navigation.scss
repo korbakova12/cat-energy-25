@@ -39,6 +39,8 @@
 }
 
 .main-navigation--nojs .main-navigation__list {
-  display: block;
-  position: static;
+  @media (max-width: $mobile-only) {
+    display: block;
+    position: static;
+  }
 }
