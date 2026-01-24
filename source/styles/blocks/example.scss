@@ -8,6 +8,11 @@
     padding-bottom: 101px;
     background-image: linear-gradient($bg-color-light 57.3%, $bg-color-basic-dark 57.3%);
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 25px;
+    padding-bottom: 71px;
+  }
 }
 
 .example__wrapper {
@@ -17,6 +22,11 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 367px 1fr;
     row-gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 433px 1fr;
+    grid-template-rows: auto 1fr auto auto;
   }
 }
 
@@ -33,6 +43,11 @@
     line-height: 60px;
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    margin-bottom: 142px;
+  }
 }
 
 .example__description {
@@ -45,11 +60,20 @@
     line-height: 24px;
     margin-bottom: 55px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
 }
 
 .example__results {
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    margin-bottom: 55px;
+  }
 }
 
 .example__costs {
@@ -69,6 +93,14 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    flex-direction: row;
+    gap: 63px;
+    margin: 0;
+    justify-content: flex-start;
+  }
 }
 
 .example__costs-title {
@@ -86,6 +118,14 @@
     grid-column: 1 / -1;
     width: 560px;
     justify-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+    justify-self: end;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
 }
 
