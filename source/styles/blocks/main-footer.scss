@@ -1,15 +1,39 @@
 .main-footer__wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: $bg-color-basic;
 }
 
 .main-footer__container {
+  display: grid;
+  align-items: stretch;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 130px 1fr 170px;
   }
 }
 
+.main-footer__logo {
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.main-footer__social {
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  border-top: 1px solid $border-color-special;
+  border-bottom: 1px solid $border-color-special;
+}
+
 .main-footer__developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+
   @include text-parameters($basic-font, 16px, 20px, $text-color-basic);
   text-decoration: none;
 

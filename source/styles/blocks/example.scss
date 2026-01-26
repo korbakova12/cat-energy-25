@@ -33,7 +33,7 @@
 
 .example__title {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 
   @include text-parameters($secondary-font, 36px, 40px, $text-color-second);
   font-weight: 400;
