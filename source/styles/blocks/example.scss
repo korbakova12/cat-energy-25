@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     padding-top: 25px;
     padding-bottom: 71px;
+    background-image: linear-gradient($bg-color-light 25.5%, $bg-color-basic 25.5%);
   }
 }
 
@@ -72,7 +73,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 2;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 }
 
