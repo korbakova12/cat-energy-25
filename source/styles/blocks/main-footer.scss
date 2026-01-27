@@ -2,6 +2,16 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: $bg-color-basic;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    padding-bottom: 69px;
+  }
 }
 
 .main-footer__wrapper {
@@ -35,6 +45,8 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
