@@ -77,3 +77,13 @@
     background: $bg-color-special;
   }
 }
+
+.main-footer__developer:hover::after,
+.main-footer__developer:active::after,
+.main-footer__developer:focus::after {
+  background-color: $bg-color-accent;
+}
+
+.main-footer__developer:active {
+  opacity: 0.3;
+}

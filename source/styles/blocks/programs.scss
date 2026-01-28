@@ -152,6 +152,10 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     grid-column: 1 / 2;
@@ -178,7 +182,7 @@
     transition: transform 0.3s linear;
   }
 
-  &:is(:hover, :focus, :focus-visible)::after {
+  &:is(:hover, :active, :focus, :focus-visible)::after {
     transform: scaleX(1.35);
   }
 }

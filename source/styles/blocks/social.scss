@@ -15,6 +15,20 @@
     mask-position: center;
     background-color: $bg-color-special;
   }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.social__link:hover::before {
+  background-color: $bg-color-accent;
+}
+
+.social__link:active::before,
+.social__link:focus::before,
+.social__link:focus-visible::before {
+  background: rgba($bg-color-accent, 0.3);
 }
 
 .social__link--vk::before {
