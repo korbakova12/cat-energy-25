@@ -3,14 +3,23 @@ $text-color-second:  #000000;
 $text-color-second-light: #111111;
 $text-color-second-light-2: #222222;
 $text-color-contrast: #ffffff;
+$text-color-counter: #f2f2f2;
 
 $basic-font: "Lato", "Arial", sans-serif;
 $secondary-font: "Oswald", "Lato", "Arial", sans-serif;
 
 $bg-color-basic: #f2f2f2;
+$bg-color-basic-dark: #eaeaea;
 $bg-color-accent: #68b738;
+$bg-color-accent-action: #5eaa2f;
 $bg-color-special: #666666;
 $bg-color-light: #ffffff;
+$bg-color-toggle: #000000;
 
 $tablet-width: 768px;
 $desktop-width: 1300px;
+$mobile-only: 767px;
+
+$border-color-basic: #e6e6e6;
+$border-color-special: #d9d9d9;
+$border-color-example: #cdcdcd;

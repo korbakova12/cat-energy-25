@@ -1,7 +1,26 @@
 .button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   @include text-parameters($secondary-font, 16px, 20px, $text-color-contrast);
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    background-color: $bg-color-accent-action;
+  }
+
+  &:active {
+    background-color: $bg-color-accent-action;
+    color: rgba($text-color-contrast, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
 }
 
 .button--primary {

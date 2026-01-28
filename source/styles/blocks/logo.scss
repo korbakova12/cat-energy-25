@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__image {
+  vertical-align: middle;
+}

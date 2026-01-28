@@ -1,6 +1,33 @@
+.process {
+  padding-top: 20px;
+  padding-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+  }
+}
+
 .process__title {
+  margin-top: 0;
+  margin-bottom: 40px;
+
   @include text-parameters ($secondary-font, 36px, 40px, $text-color-second);
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .process__list {
@@ -12,20 +39,43 @@
     display: flex;
     // justify-content: space-between;
     flex-wrap: wrap;
+    gap: 37px 134px;
+
+    counter-reset: process 0;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
+    column-gap: 73px;
   }
 }
 
 .process__item {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     width: 250px;
+    min-height: 240px;
+    padding-top: 40px;
+    flex-direction: column;
+    row-gap: 28px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }
 
+.process__item:last-child {
+  margin-bottom: 0;
+}
+
 .process__item::before {
+  flex-shrink: 0;
   content: "";
   display: block;
   width: 60px;
@@ -33,6 +83,11 @@
   background-color: $bg-color-accent;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .process__item--first::before {
@@ -53,4 +108,30 @@
 .process__item--fourth::before {
   background-image: url("../../icons/stack.svg#icon-process-4");
   background-size: 26px 31px;
+}
+
+.process__item::after {
+  @media (min-width: $tablet-width) {
+    content: counter(process);
+    position: absolute;
+    top: 0;
+    left: 115px;
+    z-index: -1;
+    display: block;
+    width: 136px;
+    height: 280px;
+
+    @include text-parameters($secondary-font, 280px, 280px, $text-color-counter);
+    counter-increment: process 1;
+  }
+}
+
+.process__item-text {
+  margin-top: 3px;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

@@ -1,9 +1,69 @@
-.example-results__number {
-  @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
-  text-transform: uppercase;
+.example-results {
+  display: flex;
+  column-gap: 32px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 43px;
+  }
+}
+
+.example-results__item {
+  width: 124px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 164px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 161px;
+  }
 }
 
 .example-results__description {
+  order: 2;
   font-size: 12px;
   line-height: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: -10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background-color: $bg-color-basic-dark;
+
+
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: -9px;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $bg-color-light;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $bg-color-basic;
+  }
+}
+
+.example-results__value {
+  padding-top: 13px;
+  padding-bottom: 17px;
+  margin-left: 0;
+  border: 1px solid $border-color-example;
+  border-radius: 3px;
+
+  @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-bottom: 20px;
+  }
 }

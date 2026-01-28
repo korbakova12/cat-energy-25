@@ -1,8 +1,8 @@
 .social {
+  display: flex;
+  column-gap: 24px;
   margin: 0;
-  padding: 0;
   list-style-type: none;
-  justify-self: center;
 }
 
 .social__link {
@@ -15,6 +15,20 @@
     mask-position: center;
     background-color: $bg-color-special;
   }
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.social__link:hover::before {
+  background-color: $bg-color-accent;
+}
+
+.social__link:active::before,
+.social__link:focus::before,
+.social__link:focus-visible::before {
+  background: rgba($bg-color-accent, 0.3);
 }
 
 .social__link--vk::before {

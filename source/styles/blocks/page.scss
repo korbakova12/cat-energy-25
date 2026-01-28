@@ -8,4 +8,17 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      width: 50%;
+      height: 693px;
+      background-image: linear-gradient(rgba($bg-color-accent, 0.85), rgba($bg-color-accent, 0.85)), url("../../images/index-hero-background-desktop@1x.jpg"), linear-gradient(to bottom left, #403f44, #505256);
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
 }

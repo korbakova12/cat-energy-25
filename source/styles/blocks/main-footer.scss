@@ -1,17 +1,70 @@
-.main-footer__wrapper {
+.main-footer__container {
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: $bg-color-basic;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 69px;
+    padding-bottom: 69px;
+  }
 }
 
-.main-footer__container {
+.main-footer__wrapper {
+  display: grid;
+  align-items: stretch;
+
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 130px 1fr 170px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+
+.main-footer__logo {
+  justify-content: center;
+  justify-self: start;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
+.main-footer__social {
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  border-top: 1px solid $border-color-special;
+  border-bottom: 1px solid $border-color-special;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .main-footer__developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+
+  justify-self: end;
+
   @include text-parameters($basic-font, 16px, 20px, $text-color-basic);
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    gap: 23px;
+  }
 
   &::after {
     content: "";
@@ -23,4 +76,14 @@
     mask-position: center;
     background: $bg-color-special;
   }
+}
+
+.main-footer__developer:hover::after,
+.main-footer__developer:active::after,
+.main-footer__developer:focus::after {
+  background-color: $bg-color-accent;
+}
+
+.main-footer__developer:active {
+  opacity: 0.3;
 }
