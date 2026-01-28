@@ -27,11 +27,12 @@
 
 .main-footer__logo {
   justify-content: center;
-  justify-self: start;
+
   padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    justify-self: start;
   }
 }
 
@@ -56,7 +57,6 @@
   align-items: center;
   padding-top: 20px;
 
-  justify-self: end;
 
   @include text-parameters($basic-font, 16px, 20px, $text-color-basic);
   text-decoration: none;
@@ -64,6 +64,7 @@
   @media (min-width: $tablet-width) {
     padding-top: 0;
     gap: 23px;
+    justify-self: end;
   }
 
   &::after {
