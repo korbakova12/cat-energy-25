@@ -21,7 +21,9 @@
 }
 
 .main-header--inner {
-  border-bottom: 1px solid $border-color-special;
+  @media (max-width: $mobile-only) {
+    border-bottom: 1px solid $border-color-special;
+  }
 }
 
 .main-header__wrapper {

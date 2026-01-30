@@ -5,6 +5,7 @@
   @include text-parameters($secondary-font, 16px, 20px, $text-color-contrast);
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 
   &:hover {
     background-color: $bg-color-accent-action;

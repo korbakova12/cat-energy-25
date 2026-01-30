@@ -1,0 +1,7 @@
+.page-title {
+  padding-top: 27px;
+  padding-bottom: 41px;
+
+  @include text-parameters ($secondary-font, 36px, 36px, $text-color-second);
+  font-weight: 400;
+}
