@@ -59,3 +59,13 @@
     background-color: $bg-color-light;
   }
 }
+
+.site-list--inner .site-list__link {
+  @media (min-width: $desktop-width) {
+    color: $text-color-second-light;
+
+    &::after {
+      background-color: $bg-color-accent;
+    }
+  }
+}

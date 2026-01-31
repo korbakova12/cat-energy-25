@@ -20,6 +20,12 @@
   }
 }
 
+.main-header--inner {
+  @media (max-width: $mobile-only) {
+    border-bottom: 1px solid $border-color-special;
+  }
+}
+
 .main-header__wrapper {
   grid-column: 1 / -1;
   width: 280px;

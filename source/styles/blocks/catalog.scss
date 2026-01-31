@@ -1,9 +1,21 @@
+.catalog {
+  // display: grid;
+  // grid-template-columns: 1fr 280px 1fr;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 708px 1fr;
+  }
+}
+
 .catalog__list {
+
   margin: 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
     display: grid;
     grid-template-columns: repeat(2, 324px);
     gap: 60px;
