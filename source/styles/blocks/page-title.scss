@@ -4,4 +4,11 @@
 
   @include text-parameters ($secondary-font, 36px, 36px, $text-color-second);
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 84px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
