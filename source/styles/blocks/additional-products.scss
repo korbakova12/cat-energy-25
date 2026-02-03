@@ -1,6 +1,6 @@
 .additional-products__title {
-  @include text-parameters($secondary-font, 24px, 24px, $text-color-second);
-  font-weight: 400;
+  padding-top: 25px;
+  padding-bottom: 36px;
 }
 
 .additional-products__wrapper {
@@ -12,11 +12,36 @@
 
 .additional-products__list {
   margin: 0;
+  margin-bottom: 33px;
   padding: 0;
   list-style-type: none;
+  border-bottom: 1px solid $border-color-special-4;
 }
 
 .additional-products__promo {
+  min-height: 290px;
+  padding: 59px 45px 43px;
+  box-sizing: border-box;
+
   @include text-parameters($basic-font, 16px, 20px, $text-color-contrast);
-  background-color: $bg-color-accent;
+  // background-color: $bg-color-accent;
+  background-image: linear-gradient(rgba($bg-color-accent, 0.85), rgba($bg-color-accent, 0.85)), url("../../images/additional_gift@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto 48px;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/icon_gift.svg");
+  }
+}
+
+.additional-products__promo-text {
+  margin: 0;
+
+  text-align: center;
 }

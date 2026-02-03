@@ -1,8 +1,35 @@
+.additional-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 13px;
+  padding-top: 11px;
+  padding-bottom: 18px;
+  border-top: 1px solid $border-color-special-4;
+}
+
 .additional-card__name {
+  grid-column: 1 / -1;
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include text-parameters ($secondary-font, 16px, 16px, $text-color-second-light-2);
+  text-transform: uppercase;
+}
+
+.additional-card__volume {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .additional-card__price {
+  justify-self: end;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 14px;
+}
+
+.additional-card__button {
+  grid-column: 1 / -1;
 }
