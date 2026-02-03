@@ -6,6 +6,10 @@
     display: grid;
     grid-template-columns: 1fr 708px 1fr;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1220px 1fr;
+  }
 }
 
 .catalog__list {
