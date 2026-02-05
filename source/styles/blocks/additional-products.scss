@@ -6,12 +6,20 @@
     padding-top: 74px;
     padding-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+  }
 }
 
 .additional-products__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
   }
 }
 
@@ -24,6 +32,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    margin-bottom: 0;
   }
 }
 
@@ -39,13 +52,19 @@
   background-size: cover;
   background-position: center;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) and (width < $desktop-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 200px;
     padding: 60px 79px;
     background-image: linear-gradient(rgba($bg-color-accent, 0.85), rgba($bg-color-accent, 0.85)), url("../../images/additional_gift_tablet@1x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 288px;
+    padding: 56px 42px 43px;
   }
 
   &::before {
@@ -56,7 +75,7 @@
     height: 80px;
     background-image: url("../../icons/icon_gift.svg");
 
-    @media (min-width: $tablet-width) {
+    @media (width >= $tablet-width) and (width <= $desktop-width) {
       margin: 0;
     }
   }
@@ -67,7 +86,7 @@
 
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media (width >= $tablet-width) and (width < $desktop-width) {
     min-width: 208px;
     text-align: left;
   }

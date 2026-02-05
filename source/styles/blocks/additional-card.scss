@@ -12,8 +12,18 @@
     grid-template-rows: repeat(2, auto);
     gap: 25px 30px;
     padding: 26px 38px 28px;
+  }
+
+  @media (width >= $tablet-width) and (width < $desktop-width) {
     border: 1px solid $border-color-special-4;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 285px 1fr minmax(42px, auto) 244px;
+    gap: 0 40px;
+    align-items: center;
+    padding: 15px 0 16px;
   }
 }
 
@@ -41,6 +51,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
 }
 
 .additional-card__price {
@@ -55,6 +69,11 @@
     line-height: 20px;
     margin-right: 2px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    justify-self: start;
+  }
 }
 
 .additional-card__button {
@@ -65,5 +84,9 @@
     line-height: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
   }
 }

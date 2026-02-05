@@ -9,6 +9,11 @@
   }
 
 
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1220px 1fr;
+  }
+
+
   &::after {
     content: "";
     grid-column: 2 / -1;
@@ -39,7 +44,14 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 40px;
+
     font-size: 32px;
     line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -40px;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
