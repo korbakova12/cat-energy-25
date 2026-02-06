@@ -3,8 +3,6 @@
   grid-template-columns: 1fr 280px 1fr;
   grid-template-rows: auto;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 36px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 708px 1fr;
