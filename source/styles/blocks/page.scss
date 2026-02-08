@@ -8,7 +8,9 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 0;
+}
 
+.page__body--index {
   @media (min-width: $desktop-width) {
     &::before {
       content: "";

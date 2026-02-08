@@ -1,6 +1,6 @@
 .main-container__title {
-  @include text-parameters ($secondary-font, 36px, 36px, $text-color-second);
-  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .main-container__hero {

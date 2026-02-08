@@ -1,8 +1,92 @@
+.additional-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 13px;
+  padding-top: 11px;
+  padding-bottom: 18px;
+  border-top: 1px solid $border-color-special-4;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr auto 63px;
+    grid-template-rows: repeat(2, auto);
+    gap: 25px 30px;
+    padding: 26px 38px 28px;
+  }
+
+  @media (width >= $tablet-width) and (width < $desktop-width) {
+    border: 1px solid $border-color-special-4;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 285px 1fr minmax(42px, auto) 244px;
+    gap: 0 40px;
+    align-items: center;
+    padding: 15px 0 16px;
+  }
+}
+
 .additional-card__name {
+  grid-column: 1 / -1;
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include text-parameters ($secondary-font, 16px, 16px, $text-color-second-light-2);
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 2;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.additional-card__volume {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: start;
+  }
 }
 
 .additional-card__price {
-  font-size: 14px;
+  justify-self: end;
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    justify-self: start;
+  }
+}
+
+.additional-card__button {
+  grid-column: 1 / -1;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / 5;
+  }
 }

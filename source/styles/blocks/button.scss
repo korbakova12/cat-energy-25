@@ -1,10 +1,11 @@
 .button {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
 
   @include text-parameters($secondary-font, 16px, 20px, $text-color-contrast);
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  border: none;
 
   &:hover {
     background-color: $bg-color-accent-action;
@@ -30,4 +31,10 @@
 .button--secondary {
   color: $text-color-basic;
   background-color: $bg-color-basic;
+
+  &:hover,
+  &:active {
+    color: $text-color-basic;
+    background-color: $border-color-special-2;
+  }
 }
