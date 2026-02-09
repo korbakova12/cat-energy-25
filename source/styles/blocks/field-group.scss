@@ -1,4 +1,12 @@
+.field-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .field-group__title {
+  width: 100%;
+
   @include text-parameters($secondary-font, 24px, 26px, $text-color-second);
 }
 

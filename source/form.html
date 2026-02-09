@@ -14,43 +14,45 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header container">
-    <a class="main-header__logo logo" href="index.html">
-      <picture>
-        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-image-desktop.svg">
-        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg">
-        <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип">
-      </picture>
-      <picture>
-        <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-add.svg">
-        <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-add.svg">
-        <img class="logo__text" src="images/logo-text-basic.svg" width="101" height="18" alt="Cat Energy">
-      </picture>
-    </a>
-    <nav class="main-navigation">
-      <button class="main-navigation__toggle" type="button">
+  <header class="main-header main-header--inner">
+    <div class="main-header__wrapper">
+      <a class="main-header__logo logo" href="index.html" aria-current="page">
+        <picture>
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-image-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-image-tablet.svg">
+          <img class="logo__image" src="images/logo-image-mobile.svg" width="33" height="38" alt="Логотип">
+        </picture>
+        <picture>
+          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-text-add.svg">
+          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-text-add.svg">
+          <img class="logo__text" src="images/logo-text-basic.svg" width="101" height="18" alt="Cat Energy">
+        </picture>
+      </a>
+      <button class="main-header__toggle main-header__toggle--closed main-header__toggle--nojs" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-navigation__list site-list">
+    </div>
+    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+      <ul class="main-navigation__list site-list site-list--inner">
         <li class="site-list__item">
-          <a class="site-list__link" href="index.html">Главная</a>
+          <a class="site-list__link" href="index.html" aria-current="page">Главная</a>
         </li>
         <li class="site-list__item">
           <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="#">Подбор программы</a>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="form.html">Подбор программы</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-container container">
-    <header class="main-container__header">
-      <h1 class="main-container__title">Подбор программы</h1>
+  <main class="main-container">
+    <header class="main-container__header container">
+      <h1 class="main-container__title page-title page-title--form">Подбор программы</h1>
     </header>
     <section class="choice-program">
       <h2 class="visually-hidden">Анкета для подбора программы для вашего питомца</h2>
-      <p class="choice-program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="choice-program__description">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
       <form class="choice-program__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="choice-program__wrapper">
           <fieldset class="choice-program__field-group field-group">
@@ -89,7 +91,9 @@
           </fieldset>
         </div>
         <fieldset class="choice-program__field-group field-group">
-          <legend class="field-group__title">Контактные данные (владельца кота)</legend>
+          <legend class="field-group__title">
+            Контактные данные (владельца кота)
+          </legend>
           <ul class="field-group__list">
             <li class="field-group__item field">
               <label class="field__label" for="choice-email">E-mail:*</label>
@@ -135,22 +139,28 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="main-footer__contacts contacts">
-      <div class="container">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8
+    <section class="main-footer__contacts contacts contacts--bg-inner">
+      <div class="contacts__wrapper container">
+        <h2 class="contacts__title">Приглашаем <br> к сотрудничеству <br> дилеров!</h2>
+        <address class="contacts__address">
+          <p class="contacts__address-street">ул. Большая <br> Конюшенная, д. 19/8</p>
           <span class="contacts__address-city">Санкт-Петербург</span>
         </address>
-        <picture>
-          <source width="1440" height="400" type="image/png" media="(min-width: 1300px)" srcset="images/map-desktop@1x.png@1x.png 1x, images/map-desktop@2x.png 2x">
-          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-          <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта проезда к офису Cat Energy">
-        </picture>
+      </div>
+      <div class="contacts__map-wrapper">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A04aa819370168e61dc5850065f61cf279dcb85b41ead25cdf7d31d5c3ea10726&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+        <noscript>
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1300px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/png" media="(min-width: 400px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+            <img class="contacts__map" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта проезда к офису Cat Energy">
+          </picture>
+        </noscript>
       </div>
     </section>
-    <div class="main-footer__wrapper">
-      <div class="container main-footer__container">
-        <a class="main-footer__logo logo" href="index.html">
+    <div class="main-footer__container">
+      <div class="container main-footer__wrapper">
+        <a class="main-footer__logo logo" href="index.html" aria-current="page">
           <img class="logo__text" src="images/logo-text-basic.svg" width="128" height="24" alt="Cat Energy">
         </a>
         <ul class="main-footer__social social">
@@ -176,7 +186,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="index.js"></script>
 </body>
 
 </html>

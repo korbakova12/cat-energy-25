@@ -1,6 +1,18 @@
 .choice-program__description {
+  margin-top: 0;
   font-family: $secondary-font;
   color: $text-color-second;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .choice-program__wrapper {
