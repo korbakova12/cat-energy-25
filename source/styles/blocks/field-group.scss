@@ -1,9 +1,73 @@
+.field-group {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  border: 0;
+}
+
+.field-group--with-border {
+  display: grid;
+  grid-template-columns: 1fr 280px 1fr;
+  border-bottom: 1px solid $border-color-special;
+}
+
+.field-group--info {
+  padding-bottom: 24px;
+}
+
+.field-group--target {
+  // padding-top: 22px;
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+}
+
 .field-group__title {
+  width: 100%;
+  margin-bottom: 36px;
+  padding: 0;
+
   @include text-parameters($secondary-font, 24px, 26px, $text-color-second);
 }
 
+.field-group--add .field-group__title {
+  margin-bottom: 31px;
+}
+
 .field-group__list {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.field-group--contacts .field-group__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.field-group--with-border .field-group__list {
+  grid-column: 2 / 3;
+}
+
+.field-group--add .field-group__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+
+
+.field-group__item {
+  display: flex;
+  column-gap: 13px;
+  align-items: center;
+}
+
+.field-group--info .field-group__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.field-group--target .field-group__item:not(:last-child) {
+  margin-bottom: 12px;
 }
