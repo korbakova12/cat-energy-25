@@ -1,5 +1,10 @@
+.choice-program {
+  padding-bottom: 32px;
+}
+
 .choice-program__description {
   margin-top: 0;
+  margin-bottom: 39px;
   font-family: $secondary-font;
   color: $text-color-second;
   text-transform: uppercase;
@@ -23,6 +28,23 @@
   }
 }
 
+.choice-program__field-group {
+  margin-bottom: 22px;
+}
+
+.choice-program__field-group--add {
+  margin-bottom: 33px;
+}
+
+.choice-program__button {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
 .choice-program__comment {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include text-parameters($basic-font, 14px, 16px, $text-color-second);
+  text-align: center;
 }

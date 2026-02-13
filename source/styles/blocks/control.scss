@@ -1,0 +1,48 @@
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.control__input {
+  position: relative;
+  margin: 0;
+  margin-right: 15px;
+  appearance: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $border-color-special-4;
+  }
+}
+
+.control__input--radio::before {
+  border-radius: 50%;
+}
+
+.control__input--radio:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 13px;
+  height: 13px;
+  background-color: $bg-color-accent;
+  border-radius: 50%;
+}
+
+.control__input--checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 14px;
+  background-image: url("../../icons/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

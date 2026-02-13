@@ -1,14 +1,46 @@
 .field__label {
+  flex-shrink: 0;
   font-family: $secondary-font;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .field__input {
+  // flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 15px 13px;
+
   @include text-parameters($secondary-font, 16px, 18px, $text-color-basic);
   text-transform: uppercase;
+  border: none;
+  outline: 1px solid $border-color-input;
 }
 
-.temp{
-  font-size: 16px;
+.field__input--textarea {
+  min-height: 150px;
 }
+
+
+// .field__input--radio {
+//   display: none;
+// }
+
+// .field__label--radio {
+//   display: flex;
+//   align-items: center;
+//   column-gap: 15px;
+// }
+
+// .field__label--radio::before {
+//   content: "";
+//   display: block;
+//   width: 28px;
+//   height: 28px;
+//   border-radius: 50%;
+//   border: 1px solid $border-color-special-4;
+// }
+
+// .temp {
+//   font-size: 16px;
+// }
