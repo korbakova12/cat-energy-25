@@ -55,7 +55,7 @@
       <p class="choice-program__description container">Заполните анкету, и мы подберем <br> программу питания для вашего кота</p>
       <form class="choice-program__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="choice-program__wrapper">
-          <fieldset class="choice-program__field-group field-group field-group--with-border field-group--info">
+          <fieldset class="choice-program__field-group choice-program__field-group--info field-group field-group--info">
             <legend class="visually-hidden">Исходные данные вашего питомца</legend>
             <ul class="field-group__list">
               <li class="field-group__item field">
@@ -72,25 +72,25 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="choice-program__field-group field-group field-group--with-border field-group--target">
+          <fieldset class="choice-program__field-group choice-program__field-group--target field-group field-group--target">
             <legend class="visually-hidden">Цель</legend>
             <ul class="field-group__list">
               <li class="field-group__item field">
                 <label class="control control--radio">
                   <input class="control__input control__input--radio" type="radio" name="target" value="weight-loss" checked>
-                  <span class="field__label">Похудение</span>
+                  <span class="control__label field__label">Похудение</span>
                 </label>
               </li>
               <li class="field-group__item field">
                 <label class="control control--radio">
                   <input class="control__input control__input--radio" type="radio" name="target" value="weight-gain">
-                  <span class="field__label">Набор массы</span>
+                  <span class="control__label field__label">Набор массы</span>
                 </label>
               </li>
               <li class="field-group__item field">
                 <label class="control control--radio">
                   <input class="control__input control__input--radio" type="radio" name="target" value="none">
-                  <span class="field__label">Не знаю (нужен ваш совет)</span>
+                  <span class="control__label field__label">Не знаю (нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
@@ -100,7 +100,7 @@
           <legend class="field-group__title section-title">
             <span class="section-title__text section-title__text--form">Контактные&nbsp;данные (владельца&nbsp;кота)</span>
           </legend>
-          <ul class="field-group__list container">
+          <ul class="field-group__list">
             <li class="field-group__item field">
               <label class="field__label" for="choice-email">E-mail:*</label>
               <input class="field__input field__input--email" type="email" name="email" id="choice-email" placeholder="kuklachev@gmail.com" required>
@@ -111,46 +111,46 @@
             </li>
           </ul>
         </fieldset>
-        <div class="choice-program__field-group field-group">
+        <div class="choice-program__field-group--comment field-group field-group--comment">
           <label class="field-group__title section-title" for="choice-comment">
             <span class="section-title__text section-title__text--form">Комментарий</span>
           </label>
-          <div class="field container">
-            <textarea class="field__input field__input--textarea" name="comment" id="choice-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="field field--comment">
+            <textarea class="field__input field__input--comment" name="comment" id="choice-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </div>
         <fieldset class="choice-program__field-group choice-program__field-group--add field-group field-group--add">
           <legend class="field-group__title section-title">
             <span class="section-title__text section-title__text--form">Дополнительно</span>
           </legend>
-          <ul class="field-group__list container">
+          <ul class="field-group__list">
             <li class="field-group__item field">
               <label class="control control--checkbox">
                 <input class="control__input control__input--checkbox" type="checkbox" name="no-sugar" checked>
-                <span class="field__label">Сахарозаменитель</span>
+                <span class="control__label field__label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="field-group__item field">
               <label class="control control--checkbox">
                 <input class="control__input control__input--checkbox" type="checkbox" name="water">
-                <span class="field__label">Питьевая вода</span>
+                <span class="control__label field__label">Питьевая вода</span>
               </label>
             </li>
             <li class="field-group__item field">
               <label class="control control--checkbox">
                 <input class="control__input control__input--checkbox" type="checkbox" name="milk">
-                <span class="field__label">Молоко</span>
+                <span class="control__label field__label">Молоко</span>
               </label>
             </li>
             <li class="field-group__item field">
               <label class="control control--checkbox">
                 <input class="control__input control__input--checkbox" type="checkbox" name="vitamins">
-                <span class="field__label">Витамины</span>
+                <span class="control__label field__label">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <div class="container">
+        <div class="choice-program__button-wrapper container">
           <button class="choice-program__button button button--primary" type="submit">Отправить заявку</button>
           <p class="choice-program__comment">* — Обязательные поля</p>
         </div>

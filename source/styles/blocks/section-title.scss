@@ -28,7 +28,7 @@
     @media (min-width: $tablet-width) {
       grid-column: 1 / -1;
       // margin-bottom: 8px;
-      margin-top: 14px;
+      margin-top: 22px;
       left: 0;
     }
   }
@@ -65,4 +65,11 @@
   width: min-content;
   padding-right: 23px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-right: 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

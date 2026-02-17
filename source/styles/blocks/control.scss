@@ -9,12 +9,21 @@
   margin-right: 15px;
   appearance: none;
 
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+  }
+
   &::before {
     content: "";
     display: block;
     width: 30px;
     height: 30px;
     border: 1px solid $border-color-special-4;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -32,6 +41,11 @@
   height: 13px;
   background-color: $bg-color-accent;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .control__input--checkbox:checked::after {
@@ -45,4 +59,8 @@
   background-image: url("../../icons/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.control__label {
+  flex-shrink: 1;
 }

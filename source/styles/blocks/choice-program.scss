@@ -1,5 +1,9 @@
 .choice-program {
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .choice-program__description {
@@ -10,6 +14,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
     padding-left: 40px;
     font-size: 20px;
     line-height: 30px;
@@ -30,15 +35,55 @@
 
 .choice-program__field-group {
   margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.choice-program__field-group--info {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+  }
+}
+
+.choice-program__field-group--target {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
+.choice-program__field-group--comment {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
 }
 
 .choice-program__field-group--add {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.choice-program__button-wrapper {
+  display: flex;
+  column-gap: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .choice-program__button {
   width: 100%;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 284px;
+    margin-bottom: 0;
+  }
 }
 
 .choice-program__comment {
@@ -47,4 +92,9 @@
 
   @include text-parameters($basic-font, 14px, 16px, $text-color-second);
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    font-size: 16px;
+  }
 }

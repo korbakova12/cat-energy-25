@@ -3,6 +3,11 @@
   font-family: $secondary-font;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .field__input {
@@ -15,10 +20,30 @@
   text-transform: uppercase;
   border: none;
   outline: 1px solid $border-color-input;
+
+  @media (min-width: $tablet-width) {
+    padding: 11px 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.field__input--textarea {
+.field--comment {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
+}
+
+.field__input--comment {
   min-height: 150px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 175px;
+    line-height: 30px;
+  }
 }
 
 
