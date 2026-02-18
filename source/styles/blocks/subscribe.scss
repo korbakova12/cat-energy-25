@@ -4,10 +4,14 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 80px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 103px;
+  }
 }
 
 .subscribe__title {
-  padding-top: 40px;
+  padding-top: 42px;
   padding-bottom: 32px;
 
   @include text-parameters($secondary-font, 24px, 24px, $text-color-second);

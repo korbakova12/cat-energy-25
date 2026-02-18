@@ -1,16 +1,136 @@
+.choice-program {
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
+}
+
 .choice-program__description {
+  margin-top: 0;
+  margin-bottom: 39px;
   font-family: $secondary-font;
   color: $text-color-second;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 64px;
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .choice-program__wrapper {
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto 70px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
   }
 }
 
+.choice-program__field-group {
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
+}
+
+.choice-program__field-group--info {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.choice-program__field-group--target {
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.choice-program__field-group--comment {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
+  }
+}
+
+.choice-program__field-group--add {
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.choice-program__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    column-gap: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.choice-program__button {
+  width: 100%;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 284px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
+}
+
 .choice-program__comment {
+  margin-top: 0;
+  margin-bottom: 0;
+
   @include text-parameters($basic-font, 14px, 16px, $text-color-second);
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    font-size: 16px;
+  }
 }
