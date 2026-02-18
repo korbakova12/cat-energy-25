@@ -27,6 +27,8 @@
 
 .choice-program__wrapper {
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto 70px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
@@ -39,11 +41,19 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+  }
 }
 
 .choice-program__field-group--info {
   @media (min-width: $tablet-width) {
     margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -52,6 +62,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -67,13 +81,26 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .choice-program__button-wrapper {
-  display: flex;
-  column-gap: 60px;
-  padding-left: 40px;
-  padding-right: 40px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+
+    column-gap: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 80px;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 .choice-program__button {
@@ -83,6 +110,10 @@
   @media (min-width: $tablet-width) {
     max-width: 284px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
   }
 }
 
@@ -95,6 +126,11 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 16px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
     font-size: 16px;
   }
 }
