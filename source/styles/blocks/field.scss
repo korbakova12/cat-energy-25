@@ -1,3 +1,17 @@
+// Переделать по БЭМ
+.field--comment {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
 .field__label {
   flex-shrink: 0;
   font-family: $secondary-font;
@@ -26,20 +40,21 @@
     font-size: 20px;
     line-height: 20px;
   }
-}
 
-.field--comment {
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 628px;
+  &:hover {
+    outline-color: $border-color-special-4;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1220px;
+  &:focus,
+  &:focus-visible {
+    outline: 2px solid $border-color-dark;
+  }
+
+  &--error {
+    outline: 2px solid $border-color-error;
   }
 }
+
 
 .field__input--email {
   background-image: url("../../icons/icon-email.svg");
