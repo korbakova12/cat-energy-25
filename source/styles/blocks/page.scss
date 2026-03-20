@@ -18,7 +18,15 @@
       left: 50%;
       width: 50%;
       height: 693px;
-      background-image: linear-gradient(rgba($bg-color-accent, 0.85), rgba($bg-color-accent, 0.85)), url("../../images/index-hero-background-desktop@1x.jpg"), linear-gradient(to bottom left, #403f44, #505256);
+      background-image:
+        linear-gradient(rgba($bg-color-accent, 0.85), rgba($bg-color-accent, 0.85)),
+        image-set(
+          url("../../images/index-hero-background-desktop@1x.webp") type("image/webp") 1x,
+          url("../../images/index-hero-background-desktop@2x.webp") type("image/webp") 2x,
+          url("../../images/index-hero-background-desktop@1x.png") type("image/png") 1x,
+          url("../../images/index-hero-background-desktop@2x.png") type("image/png") 2x
+        ),
+        linear-gradient(to bottom left, #403f44, #505256);
       background-repeat: no-repeat;
       z-index: -1;
     }
