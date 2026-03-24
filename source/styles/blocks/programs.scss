@@ -75,7 +75,7 @@
     @media (min-width: $tablet-width) {
       grid-column: 2 / 3;
       grid-row: 1 / 4;
-      place-self: center end;
+      place-self: start end;
       width: 200px;
       height: 200px;
     }
@@ -101,7 +101,7 @@
   background-image: url("../../icons/stack.svg#icon-program-pro");
 
   @media (min-width: $tablet-width) {
-    align-self: center;
+    // align-self: start;
   }
 }
 
