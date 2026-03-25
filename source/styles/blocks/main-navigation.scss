@@ -11,12 +11,15 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    column-gap: 34px;
     width: 440px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 700px;
-    justify-content: flex-end;
+    width: 610px;
+
     background-color: transparent;
   }
 }
