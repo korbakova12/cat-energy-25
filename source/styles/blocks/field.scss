@@ -13,7 +13,8 @@
 }
 
 .field__label {
-  flex-shrink: 0;
+  // временно изменили на 1
+  flex-shrink: 1;
   font-family: $secondary-font;
   font-size: 16px;
   text-transform: uppercase;
@@ -25,8 +26,8 @@
 }
 
 .field__input {
-  // flex-grow: 1;
-  width: 100%;
+  flex-grow: 1;
+  // width: 100%;
   box-sizing: border-box;
   padding: 14px 15px 13px;
 
@@ -72,6 +73,7 @@
 
 .field__input--comment {
   min-height: 150px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     min-height: 175px;
