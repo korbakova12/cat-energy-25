@@ -21,16 +21,31 @@
     // position: absolute;
     // width: 100%;
     height: 2px;
-    margin-top: 15px;
+    margin-top: 9px;
     background-color: $bg-color-accent;
     z-index: -1;
 
     @media (min-width: $tablet-width) {
       grid-column: 1 / -1;
       // margin-bottom: 8px;
-      margin-top: 22px;
+      margin-top: 15px;
       left: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / -1;
+      // margin-bottom: 8px;
+      margin-top: 17px;
+      left: 0;
+    }
+  }
+}
+
+.section-title--form-line::before {
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 22px;
   }
 }
 

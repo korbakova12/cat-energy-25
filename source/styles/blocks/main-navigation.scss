@@ -11,13 +11,15 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
     flex-wrap: wrap;
     column-gap: 34px;
-    width: 440px;
+    width: 438px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: flex-end;
     width: 610px;
 
     background-color: transparent;
