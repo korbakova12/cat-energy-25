@@ -176,6 +176,10 @@
     background-color: rgba($bg-color-accent-action, 0.6);
   }
 
+  &:focus-visible {
+    background-color: $bg-color-accent;
+  }
+
   &::before {
     position: absolute;
     top: 50%;
@@ -216,10 +220,12 @@
 }
 
 
-.example__images-button:active::before {
+.example__images-button:active::before,
+.example__images-button:focus-visible::before {
   border-color: rgba($bg-color-accent-action, 0.6);
 }
 
-.example__images-button:active::after {
+.example__images-button:active::after,
+.example__images-button:focus-visible::after {
   background-color: rgba($bg-color-accent-action, 0.6);
 }

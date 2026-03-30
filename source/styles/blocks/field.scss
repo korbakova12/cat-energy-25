@@ -36,6 +36,8 @@
   border: none;
   outline: 1px solid $border-color-input;
 
+  cursor: pointer;
+
   @media (min-width: $tablet-width) {
     padding: 11px 20px;
     font-size: 20px;

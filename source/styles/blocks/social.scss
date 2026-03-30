@@ -17,18 +17,18 @@
     background-color: $bg-color-special;
   }
 
-  &:focus-visible {
-    outline: none;
-  }
+  // &:focus-visible {
+  //   // outline: none;
+  // }
 }
 
-.social__link:hover::before {
+.social__link:hover::before,
+.social__link:focus-visible::before,
+.social__link:focus::before {
   background-color: $bg-color-accent;
 }
 
-.social__link:active::before,
-.social__link:focus::before,
-.social__link:focus-visible::before {
+.social__link:active::before {
   background: rgba($bg-color-accent, 0.3);
 }
 
