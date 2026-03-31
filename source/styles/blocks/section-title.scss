@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 280px 1fr;
   grid-template-rows: auto;
-  // align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 708px 1fr;
@@ -18,8 +17,6 @@
     content: "";
     grid-column: 2 / -1;
     grid-row: 1 / -1;
-    // position: absolute;
-    // width: 100%;
     height: 2px;
     margin-top: 9px;
     background-color: $bg-color-accent;
@@ -27,14 +24,12 @@
 
     @media (min-width: $tablet-width) {
       grid-column: 1 / -1;
-      // margin-bottom: 8px;
       margin-top: 15px;
       left: 0;
     }
 
     @media (min-width: $desktop-width) {
       grid-column: 1 / -1;
-      // margin-bottom: 8px;
       margin-top: 17px;
       left: 0;
     }

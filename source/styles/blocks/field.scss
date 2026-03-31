@@ -1,19 +1,4 @@
-// Переделать по БЭМ
-.field--comment {
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 628px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
-}
-
 .field__label {
-  // временно изменили на 1
   flex-shrink: 1;
   font-family: $secondary-font;
   font-size: 16px;
@@ -27,7 +12,6 @@
 
 .field__input {
   flex-grow: 1;
-  // width: 100%;
   box-sizing: border-box;
   padding: 14px 15px 13px;
 
@@ -74,39 +58,19 @@
 }
 
 .field__input--comment {
+  display: block;
   min-height: 150px;
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    width: 628px;
     min-height: 175px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     padding-top: 8px;
   }
 }
-
-
-// .field__input--radio {
-//   display: none;
-// }
-
-// .field__label--radio {
-//   display: flex;
-//   align-items: center;
-//   column-gap: 15px;
-// }
-
-// .field__label--radio::before {
-//   content: "";
-//   display: block;
-//   width: 28px;
-//   height: 28px;
-//   border-radius: 50%;
-//   border: 1px solid $border-color-special-4;
-// }
-
-// .temp {
-//   font-size: 16px;
-// }

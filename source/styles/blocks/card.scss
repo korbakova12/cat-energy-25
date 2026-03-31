@@ -165,8 +165,6 @@
 }
 
 .card__info-list {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   font-size: 12px;
@@ -202,7 +200,6 @@
 }
 
 .card__info-value {
-  // justify-self: end;
   text-align: right;
   margin-left: 0;
 }

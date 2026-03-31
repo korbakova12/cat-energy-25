@@ -46,7 +46,6 @@
   box-sizing: border-box;
 
   @include text-parameters($basic-font, 16px, 20px, $text-color-contrast);
-  // background-color: $bg-color-accent;
   background-image:
 
     linear-gradient(rgba($bg-color-accent, 0.85), rgba($bg-color-accent, 0.85)),

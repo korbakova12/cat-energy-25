@@ -7,21 +7,16 @@
 }
 
 .field-group--target {
-  // display: grid;
-  // grid-template-columns: 1fr 280px 1fr;
   border-top: 1px solid $border-color-special;
   border-bottom: 1px solid $border-color-special;
   padding-top: 22px;
   padding-bottom: 14px;
-  // margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
-    // grid-template-columns: 1fr 708px 1fr;
     border: none;
     padding-top: 0;
     padding-bottom: 0;
   }
-  // padding-top: 22px;
 }
 
 .field-group__title {
@@ -67,7 +62,6 @@
   @media (min-width: $tablet-width) {
     width: 628px;
     box-sizing: border-box;
-    // padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -94,7 +88,6 @@
 
 .field-group--contacts .field-group__list {
   display: grid;
-  // flex-direction: column;
   row-gap: 14px;
 
   @media (min-width: $tablet-width) {
@@ -107,13 +100,8 @@
   }
 }
 
-// .field-group--target .field-group__list {
-//   grid-column: 2 / 3;
-// }
-
 .field-group--add .field-group__list {
   display: grid;
-  // flex-direction: column;
   row-gap: 11px;
 
   @media (min-width: $tablet-width) {
