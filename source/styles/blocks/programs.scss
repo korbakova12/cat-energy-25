@@ -16,12 +16,12 @@
   gap: 22px 20px;
   background-color: $bg-color-basic;
   margin-bottom: 20px;
-  padding: 24px 20px 18px;
+  padding: 24px 20px 12px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 250px;
     gap: 24px 7px;
-    padding: 75px 63px 63px 53px;
+    padding: 75px 63px 57px 53px;
     margin-bottom: 30px;
   }
 
@@ -29,7 +29,7 @@
     grid-template-columns: 100px 1fr;
     column-gap: 62px;
     margin-bottom: 0;
-    padding: 37px 61px 63px 52px;
+    padding: 37px 61px 57px 52px;
   }
 
   &::before {
@@ -159,7 +159,7 @@
   align-items: center;
   column-gap: 15px;
   grid-column: 1 / -1;
-  padding-top: 19px;
+  padding-top: 10px;
   border-top: 1px solid $border-color-special;
 
   @include text-parameters($secondary-font, 16px, 35px, $text-color-second);
@@ -174,14 +174,14 @@
     font-size: 20px;
     grid-column: 1 / 2;
     border-top: none;
-    margin-top: 33px;
+    margin-top: 24px;
     padding-top: 0;
     column-gap: 25px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / -1;
-    margin-top: 10px;
+    margin-top: 0;
   }
 
   &::after {
