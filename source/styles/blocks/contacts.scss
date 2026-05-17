@@ -7,7 +7,7 @@
 }
 
 .contacts--bg-inner {
-  @media (width < $desktop-width) {
+  @media (max-width: 1299px) {
     background-color: $bg-color-basic;
   }
 }

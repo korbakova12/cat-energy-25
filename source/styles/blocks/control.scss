@@ -4,6 +4,11 @@
   cursor: pointer;
 }
 
+.control:has(.control__input:disabled) {
+  opacity: 0.1;
+  cursor: default;
+}
+
 .control__input {
   position: relative;
   margin: 0;

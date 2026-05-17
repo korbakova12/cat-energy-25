@@ -8,13 +8,18 @@
   border: none;
   cursor: pointer;
 
-  &:hover {
+  &:hover:not(:disabled) {
     background-color: $bg-color-accent-action;
   }
 
-  &:active {
+  &:active:not(:disabled) {
     background-color: $bg-color-accent-action;
     color: rgba($text-color-contrast, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.1;
+    cursor: default;
   }
 
   @media (min-width: $tablet-width) {
@@ -33,8 +38,8 @@
   color: $text-color-basic;
   background-color: $bg-color-basic;
 
-  &:hover,
-  &:active {
+  &:hover:not(:disabled),
+  &:active:not(:disabled) {
     color: $text-color-basic;
     background-color: $border-color-special-2;
   }

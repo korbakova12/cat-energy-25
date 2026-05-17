@@ -176,7 +176,7 @@
     border-top: none;
     margin-top: 24px;
     padding-top: 0;
-    column-gap: 25px;
+    column-gap: 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -187,16 +187,16 @@
   &::after {
     content: "";
     display: block;
-    width: 24px;
+    width: 32px;
     height: 12px;
     background-image: url("../../icons/stack.svg#icon-arrow-button");
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: -8px;
     transform-origin: left center;
-    transition: transform 0.3s linear;
+    transition: background-position 0.3s linear;
   }
 
   &:is(:hover, :active, :focus, :focus-visible)::after {
-    transform: scaleX(1.35);
+    background-position: 0;
   }
 }

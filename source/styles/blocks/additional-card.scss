@@ -14,7 +14,7 @@
     padding: 26px 38px 28px;
   }
 
-  @media (width >= $tablet-width) and (width < $desktop-width) {
+  @media (min-width: 768px) and (max-width: 1299px) {
     border: 1px solid $border-color-special-4;
     border-bottom: none;
   }
@@ -33,6 +33,7 @@
   margin-bottom: 0;
 
   @include text-parameters ($secondary-font, 16px, 16px, $text-color-second-light-2);
+  font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {

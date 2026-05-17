@@ -4,7 +4,7 @@
 }
 
 .main-container__hero {
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-only) {
     margin-bottom: 20px;
   }
 

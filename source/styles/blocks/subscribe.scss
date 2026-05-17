@@ -29,7 +29,7 @@
 }
 
 .subscribe__container {
-  @media (width >= $tablet-width) and (width < $desktop-width) {
+  @media (min-width: 768px) and (max-width: 1299px) {
     padding-left: 38px;
     padding-right: 38px;
     box-sizing: border-box;
@@ -75,13 +75,18 @@
   @include text-parameters($secondary-font, 20px, 20px, $text-color-basic);
   text-transform: uppercase;
 
-  &:hover {
+  &:hover:not(:disabled) {
     outline-color: #9a9a9a;
   }
 
-  &:focus {
+  &:focus:not(:disabled) {
     outline: 2px solid $border-color-dark;
     outline-offset: -2px;
+  }
+
+  &:disabled {
+    background-color: $bg-color-disabled;
+    cursor: default;
   }
 
   @media (min-width: $tablet-width) {

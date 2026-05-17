@@ -28,17 +28,22 @@
     line-height: 20px;
   }
 
-  &:hover {
+  &:hover:not(:disabled) {
     outline-color: $border-color-special-4;
   }
 
-  &:focus,
-  &:focus-visible {
+  &:focus:not(:disabled),
+  &:focus-visible:not(:disabled) {
     outline: 2px solid $border-color-dark;
   }
 
   &--error {
     outline: 2px solid $border-color-error;
+  }
+
+  &:disabled {
+    background-color: $bg-color-disabled;
+    cursor: default;
   }
 }
 

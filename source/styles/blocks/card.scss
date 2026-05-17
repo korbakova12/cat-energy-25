@@ -10,6 +10,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
     padding: 10px 37px 40px;
     background-image: linear-gradient($bg-color-light 82px, $bg-color-basic 82px);
   }
@@ -26,6 +27,7 @@
 
 .card--show-more {
   @media (min-width: $tablet-width) {
+    justify-content: center;
     padding-top: 50px;
     margin-top: 82px;
     background-color: $bg-color-light;
@@ -44,24 +46,34 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: minmax(110px, auto) auto 1fr auto;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: minmax(100px, auto) auto 1fr auto;
   }
 }
 
 .card__wrapper--show-more {
   position: relative;
   display: flex;
+  // display: grid;
   flex-direction: column;
   align-items: stretch;
   padding-top: 60px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 110px;
+    // margin-top: auto;
+    // padding-top: 110px;
+    display: grid;
+    padding-top: 0;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 98px;
+    // padding-top: 98px;
   }
 }
 
@@ -111,7 +123,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    justify-self: center;
+    place-self: end center;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     width: 155px;
@@ -143,8 +155,10 @@
   color: $text-color-second-light;
 
   @media (min-width: $tablet-width) {
+    grid-row: 2/3;
+    margin: 0 auto;
     margin-bottom: 23px;
-    width: 175px;
+    // width: 175px;
     align-self: center;
   }
 }
@@ -155,12 +169,20 @@
   font-size: 12px;
   line-height: 16px;
 
+  br {
+    display: none;
+  }
+
 
   @media (min-width: $tablet-width) {
+    grid-row: 3/4;
     font-size: 16px;
     line-height: 18px;
-    width: 225px;
-    align-self: center;
+    align-self: start;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -248,10 +270,10 @@
   margin-top: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 82px;
+    // margin-top: 82px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 93px;
+    // margin-top: 93px;
   }
 }

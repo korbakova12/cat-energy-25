@@ -27,13 +27,13 @@
 }
 
 .main-navigation--closed .main-navigation__list {
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-only) {
     display: none;
   }
 }
 
 .main-navigation--opened .main-navigation__list {
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-only) {
     width: 100%;
     position: absolute;
     top: 100%;
