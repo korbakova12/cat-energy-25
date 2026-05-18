@@ -16,6 +16,13 @@
   vertical-align: middle;
 }
 
+.logo__text {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
 .main-header--inner .logo__text {
   @media (max-width: $mobile-only) {
     margin-top: 8px;
