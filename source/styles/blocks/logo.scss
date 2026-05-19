@@ -23,8 +23,7 @@
   }
 }
 
-.main-header--inner .logo__text {
-  @media (max-width: $mobile-only) {
-    margin-top: 8px;
-  }
+.logo__text--footer {
+  width: 128px;
+  height: 24px;
 }

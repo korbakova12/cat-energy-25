@@ -23,13 +23,11 @@
     z-index: -1;
 
     @media (min-width: $tablet-width) {
-      // grid-column: 1 / -1;
       margin-top: 15px;
       left: 0;
     }
 
     @media (min-width: $desktop-width) {
-      // grid-column: 1 / -1;
       margin-top: 17px;
       left: 0;
     }
