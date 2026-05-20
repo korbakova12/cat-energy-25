@@ -5,8 +5,12 @@
 }
 
 .control:has(.control__input:disabled) {
-  opacity: 0.1;
+  color: $text-color-disabled;
   cursor: default;
+}
+
+.control__input:disabled {
+  opacity: 0.2;
 }
 
 .control__input {
